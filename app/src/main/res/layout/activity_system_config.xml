@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView
+        android:id="@+id/tv_set_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_news_enter"
+        android:padding="15dp"
+        android:text="@string/set_wifi"
+        android:textSize="18sp"
+        android:textColor="@color/black_333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_eeeeee"/>
+
+    <TextView
+        android:id="@+id/tv_set_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_news_enter"
+        android:padding="15dp"
+        android:text="@string/set_sound"
+        android:textSize="18sp"
+        android:textColor="@color/black_333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_eeeeee"/>
+    <TextView
+        android:id="@+id/tv_set_backlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_news_enter"
+        android:padding="15dp"
+        android:text="@string/set_backlight"
+        android:textSize="18sp"
+        android:textColor="@color/black_333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_eeeeee"/>
+
+    <TextView
+        android:id="@+id/tv_set_inputmethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_news_enter"
+        android:padding="15dp"
+        android:text="@string/set_inputmethod"
+        android:textSize="18sp"
+        android:textColor="@color/black_333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black_eeeeee"/>
+
+</LinearLayout>

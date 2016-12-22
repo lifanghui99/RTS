@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:padding="0dp"
+    android:paddingLeft="0dp"
+    android:background="@drawable/index_bg"
+
+    tools:context=".activity.MainActivity">
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lachapelle" />
+    <TextView
+        android:id="@+id/tv_login_username"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/iv_login_logo"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/user" />
+    <EditText
+        android:id="@+id/et_login_username"
+        style="@style/CommonEdit"
+        android:layout_width="180.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_login_username"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/tv_login_username"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_login_pwd"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_login_username"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        style="@style/CommonEdit"
+        android:layout_width="180.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_login_pwd"
+        android:layout_marginLeft="5dip"
+
+        android:layout_toRightOf="@id/tv_login_pwd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_login_machineIDName"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_login_pwd"
+        android:layout_below="@id/tv_login_pwd"
+        android:layout_marginTop="10dip"
+        android:text="@string/deviceId" />
+
+    <TextView
+        android:id="@+id/tv_login_machineID"
+        style="@style/TagText"
+        android:layout_width="160.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_login_machineIDName"
+        android:layout_alignLeft="@id/et_login_username"
+        android:layout_toRightOf="@id/tv_login_machineIDName" />
+
+    <TextView
+        android:id="@+id/tv_login_site"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login_machineIDName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:id="@+id/lly_login_llyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login_site"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sysconfig"
+            style="@style/BottomBarButton"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="@string/system_config" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/BottomBarButton"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/login" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login_tel"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="@string/salesCalls" />
+
+
+    <TextView
+        android:id="@+id/tv_login_version"
+        style="@style/TagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/tv_login_tel"
+        android:layout_marginLeft="5dp"
+        android:text="版本:"
+        />
+</RelativeLayout>
